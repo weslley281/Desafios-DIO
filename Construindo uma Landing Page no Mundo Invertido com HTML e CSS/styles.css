@@ -1,0 +1,109 @@
+/* styles.css */
+
+/* Estilo base */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header h1 {
+    font-family: 'Benguiat', sans-serif;
+    font-size: 3rem;
+}
+
+#theme-switcher {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.hero {
+    margin-top: 100px;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #333;
+    color: white;
+    background-image: url('stranger-things-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding: 50px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    color: white;
+}
+
+/* Estilo do Theme Switcher */
+
+/* Light Mode (Mundo Real) */
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode .header {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.light-mode #theme-switcher {
+    background-color: black;
+    color: white;
+}
+
+.light-mode .hero {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Dark Mode (Mundo Invertido) */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode .header {
+    background-color: #111;
+    color: white;
+}
+
+.dark-mode #theme-switcher {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode .hero {
+    background-color: #333;
+    color: white;
+}
