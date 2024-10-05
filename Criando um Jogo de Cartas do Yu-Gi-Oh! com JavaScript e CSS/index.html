@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh Jo-Ken-Po</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-choice {
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1 class="mt-5">Yu-Gi-Oh Jo-Ken-Po</h1>
+        <p>Escolha uma carta: Monstro (Pedra), Magia (Papel), Armadilha (Tesoura)</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img id="monstro" src="monstro.png" alt="Monstro" class="card-choice" width="150">
+                <p>Monstro</p>
+            </div>
+            <div class="col-md-4">
+                <img id="magia" src="magia.png" alt="Magia" class="card-choice" width="150">
+                <p>Magia</p>
+            </div>
+            <div class="col-md-4">
+                <img id="armadilha" src="armadilha.png" alt="Armadilha" class="card-choice" width="150">
+                <p>Armadilha</p>
+            </div>
+        </div>
+
+        <button id="jogar" class="btn btn-primary mt-4">Jogar</button>
+
+        <div class="result mt-4" id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
