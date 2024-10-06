@@ -1,0 +1,76 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: red;
+}
+
+/* Efeitos de Universo */
+.universe {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease-in-out;
+}
+
+/* Sobreposição e Parallax */
+#universe1 {
+    background-image: url('earth-616.jpg');
+}
+
+#universe2 {
+    background-image: url('spider-verse.jpg');
+    z-index: 2;
+}
+
+#universe3 {
+    background-image: url('spider-gwen.jpg');
+    z-index: 3;
+}
+
+/* Conteúdo centralizado */
+.content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Animação de Fade-In */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Animação ao passar o mouse */
+.content:hover {
+    animation: shake 0.5s;
+}
+
+/* Efeito de shake ao passar o mouse */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
